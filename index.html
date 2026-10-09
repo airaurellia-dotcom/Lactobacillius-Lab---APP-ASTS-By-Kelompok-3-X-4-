@@ -1,5 +1,21 @@
 <!DOCTYPE html>
 <html lang="id" class="h-full">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        wasabi: '#E9F056',
+                        sauge: '#AEBBA0',
+                        coolblue: '#D7EFFF',
+                        topaze: '#FF5C34',
+                        cassis: '#351E28'
+                    }
+                }
+            }
+        }
+    </script>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,7 +45,7 @@
         }
     </style>
 </head>
-<body class="h-full bg-[#030712] text-slate-100 flex flex-col overflow-hidden">
+<body class="h-full bg-[#1F1117] text-slate-100 flex flex-col overflow-hidden">
 
     <div id="welcome-modal" class="fixed inset-0 z-50 flex items-center justify-center bg-slate-950/80 backdrop-blur-md p-4 transition-opacity duration-300">
         <div class="glass-panel max-w-lg w-full p-6 md:p-8 rounded-3xl shadow-2xl border border-emerald-500/30 text-center relative overflow-hidden">
@@ -92,7 +108,7 @@
 
             <!-- Mode Switcher -->
             <div class="absolute top-4 right-4 z-10 glass-panel p-1.5 rounded-2xl shadow-xl flex items-center gap-1 border border-slate-800">
-                <button onclick="setMode('single')" id="btn-mode-single" class="px-3 py-1.5 text-xs font-semibold rounded-xl bg-emerald-600 text-white shadow-md transition font-heading">
+                <button onclick="setMode('single')" id="btn-mode-single" class="px-3 py-1.5 text-xs font-semibold rounded-xl bg-topaze text-white shadow-md transition font-heading">
                     🔬 Single Cell
                 </button>
                 <button onclick="setMode('colony')" id="btn-mode-colony" class="px-3 py-1.5 text-xs font-semibold rounded-xl text-slate-400 hover:text-white transition font-heading">
@@ -106,7 +122,7 @@
                     🔄 Reset Kamera
                 </button>
                 <div class="w-px h-4 bg-slate-700"></div>
-                <button onclick="toggleAnimation()" id="anim-btn" class="px-3 py-1.5 bg-emerald-600 hover:bg-emerald-500 text-white rounded-xl transition font-medium shadow-md shadow-emerald-600/20">
+                <button onclick="toggleAnimation()" id="anim-btn" class="px-3 py-1.5 bg-topaze hover:bg-emerald-500 text-white rounded-xl transition font-medium shadow-md shadow-emerald-600/20">
                     ⏸️ Jeda Rotasi
                 </button>
             </div>
